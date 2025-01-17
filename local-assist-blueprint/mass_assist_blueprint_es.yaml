@@ -64,23 +64,23 @@ blueprint:
 triggers:
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [el|la](album|ep|disco|single) {media_name} [de [el|la](artista|banda|grupo) {artist}] [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [el ](album | ep | disco | single) {media_name} [de[l] [el | la] (artista|banda|grupo) {artist}] [(en | usando) [el | la | los | las] {area_or_player_name}][ (con | usando) {radio_mode}]"
     id: album
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [el|la](pista|cancion) {media_name} [de [el|la](artista|banda|grupo) {artist}] [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [la ](pista|cancion) {media_name} [de[l] [el | la] (artista|banda|grupo) {artist}] [(en | usando) [el | la | los | las] {area_or_player_name}][ (con | usando) {radio_mode}]"
     id: track
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [el|la](artista|banda|grupo) {media_name} [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [el | la ](artista|banda|grupo) {media_name}  [(en | usando) [el | la | los | las] {area_or_player_name}][ (con | usando) {radio_mode}]"
     id: artist
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [el|la]((estacion de radio)|(radio)|(estacion)) {media_name} [(en|usando) [el|la]{area_or_player_name}]"
+      - "(reproducir|escuchar) [la ](estacion de radio|radio|estacion) {media_name} [(en | usando) [el | la | los | las] {area_or_player_name}]"
     id: radio
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [el|la](lista de reproduccion| playlist) {media_name} [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [la ](lista de reproduccion| playlist) {media_name} [(en | usando) [el | la | los | las] {area_or_player_name}]"
     id: playlist
 conditions: []
 actions:
