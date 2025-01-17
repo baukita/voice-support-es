@@ -21,7 +21,7 @@ blueprint:
 
     #### Variaciones aceptables
 
-    Existen variaciones aceptables en algunas palabras y la inclusión de la palabra `el` es opcional.
+    Existen variaciones aceptables en algunas palabras y la inclusión de las palabras `el y la` es opcional.
 
     #### Ejemplos
 
@@ -64,23 +64,23 @@ blueprint:
 triggers:
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [el ](album|ep|disco|single) {media_name} [de [el ](artista|banda|grupo) {artist}] [(en|usando) [el| la ]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [el|la](album|ep|disco|single) {media_name} [de [el|la](artista|banda|grupo) {artist}] [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
     id: album
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [la ](pista|cancion) {media_name} [de [el ](artista|banda|grupo) {artist}] [(en|usando) [el| la ]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [el|la](pista|cancion) {media_name} [de [el|la](artista|banda|grupo) {artist}] [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
     id: track
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [la ](artista|banda|grupo) {media_name} [(en|usando) [el| la ]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [el|la](artista|banda|grupo) {media_name} [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
     id: artist
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [la ]((estacion de radio)|(radio)|(estacion)) {media_name} [(en|usando) [el| la ]{area_or_player_name}]"
+      - "(reproducir|escuchar) [el|la]((estacion de radio)|(radio)|(estacion)) {media_name} [(en|usando) [el|la]{area_or_player_name}]"
     id: radio
   - trigger: conversation
     command:
-      - "(reproducir|escuchar) [la ]playlist {media_name} [(en|usando) [el| la ]{area_or_player_name}][ (con|usando) {radio_mode}]"
+      - "(reproducir|escuchar) [el|la](lista de reproduccion| playlist) {media_name} [(en|usando) [el|la]{area_or_player_name}][ (con|usando) {radio_mode}]"
     id: playlist
 conditions: []
 actions:
